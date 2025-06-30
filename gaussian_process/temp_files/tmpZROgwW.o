@@ -1,0 +1,203 @@
+[?1h=
+                                                            < M A T L A B (R) >
+                                                  Copyright 1984-2023 The MathWorks, Inc.
+                                             R2023b Update 7 (23.2.0.2515942) 64-bit (glnxa64)
+                                                              January 30, 2024
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+
+a =
+
+    'Load the data, it should contain X and y.'
+
+
+X =
+
+    0.6827   -0.0300   -0.2000
+    0.6926   -0.0300   -0.1000
+    0.6962   -0.0300   -0.0500
+    0.6975   -0.0300   -0.0250
+    0.6967   -0.0300         0
+    0.6995   -0.0300    0.0250
+    0.7001   -0.0300    0.0500
+    0.7001   -0.0300    0.1000
+    0.6960   -0.0300    0.2000
+    0.6791   -0.0200   -0.2000
+    0.6882   -0.0200   -0.1000
+    0.6917   -0.0200   -0.0500
+    0.6930   -0.0200   -0.0250
+    0.6921   -0.0200         0
+    0.6949   -0.0200    0.0250
+    0.6954   -0.0200    0.0500
+    0.6955   -0.0200    0.1000
+    0.6923   -0.0200    0.2000
+    0.6766   -0.0100   -0.2000
+    0.6852   -0.0100   -0.1000
+    0.6885   -0.0100   -0.0500
+    0.6898   -0.0100   -0.0250
+    0.6888   -0.0100         0
+    0.6916   -0.0100    0.0250
+    0.6920   -0.0100    0.0500
+    0.6921   -0.0100    0.1000
+    0.6892   -0.0100    0.2000
+    0.6772         0   -0.2000
+    0.6855         0   -0.1000
+    0.6887         0   -0.0500
+    0.6900         0   -0.0250
+    0.6910         0         0
+    0.6917         0    0.0250
+    0.6922         0    0.0500
+    0.6922         0    0.1000
+    0.6895         0    0.2000
+    0.6787    0.0100   -0.2000
+    0.6872    0.0100   -0.1000
+    0.6904    0.0100   -0.0500
+    0.6917    0.0100   -0.0250
+    0.6907    0.0100         0
+    0.6935    0.0100    0.0250
+    0.6940    0.0100    0.0500
+    0.6941    0.0100    0.1000
+    0.6914    0.0100    0.2000
+    0.6831    0.0200   -0.2000
+    0.6920    0.0200   -0.1000
+    0.6954    0.0200   -0.0500
+    0.6967    0.0200   -0.0250
+    0.6958    0.0200         0
+    0.6986    0.0200    0.0250
+    0.6992    0.0200    0.0500
+    0.6994    0.0200    0.1000
+    0.6966    0.0200    0.2000
+    0.6886    0.0300   -0.2000
+    0.6982    0.0300   -0.1000
+    0.7017    0.0300   -0.0500
+    0.7030    0.0300   -0.0250
+    0.7022    0.0300         0
+    0.7050    0.0300    0.0250
+    0.7057    0.0300    0.0500
+    0.7060    0.0300    0.1000
+    0.7025    0.0300    0.2000
+
+
+y =
+
+    0.2267
+    0.2214
+    0.2209
+    0.2213
+    0.2240
+    0.2231
+    0.2246
+    0.2292
+    0.2438
+    0.2357
+    0.2317
+    0.2313
+    0.2317
+    0.2345
+    0.2336
+    0.2351
+    0.2394
+    0.2520
+    0.2410
+    0.2377
+    0.2375
+    0.2378
+    0.2407
+    0.2397
+    0.2412
+    0.2454
+    0.2570
+    0.2425
+    0.2395
+    0.2393
+    0.2397
+    0.2404
+    0.2415
+    0.2431
+    0.2471
+    0.2583
+    0.2400
+    0.2368
+    0.2366
+    0.2370
+    0.2399
+    0.2389
+    0.2404
+    0.2444
+    0.2558
+    0.2338
+    0.2301
+    0.2298
+    0.2302
+    0.2331
+    0.2321
+    0.2336
+    0.2377
+    0.2499
+    0.2238
+    0.2189
+    0.2186
+    0.2191
+    0.2218
+    0.2209
+    0.2223
+    0.2266
+    0.2404
+
+
+meanfunc =
+
+  1x1 cell array
+
+    {@meanZero}
+
+
+covfunc =
+
+  1x2 cell array
+
+    {@covSum}    {1x2 cell}
+
+
+hyp = 
+
+  struct with fields:
+
+    mean: []
+     cov: [-2.0136 -0.9073 0.9395 2.4985 -2.1114 1.0021 -0.1769 -2.3091 -1.0431 0.4335 3.1584 -1.4802 -2.0736 0 -2 0 ... ] (1x20 double)
+
+
+likfunc =
+
+  function_handle with value:
+
+    @likGauss
+
+
+hyp = 
+
+  struct with fields:
+
+    mean: []
+     cov: [-2.0136 -0.9073 0.9395 2.4985 -2.1114 1.0021 -0.1769 -2.3091 -1.0431 0.4335 3.1584 -1.4802 -2.0736 0 -2 0 ... ] (1x20 double)
+     lik: -11.6249
+
+BLAS: trying environment BLAS_VERSION...
+BLAS: loading /opt/intel/oneapi/mkl/2024.0/lib/intel64/libmkl_rt.so
+BLAS: loaded /opt/intel/oneapi/mkl/2024.0/lib/intel64/libmkl_rt.so@0x14b943646e50
+LAPACK: trying environment LAPACK_VERSION...
+LAPACK: loading /opt/intel/oneapi/mkl/2024.0/lib/intel64/libmkl_rt.so
+LAPACK: loaded /opt/intel/oneapi/mkl/2024.0/lib/intel64/libmkl_rt.so@0x14b943646e50
+Function evaluation      0;  Value -4.909119e+02Function evaluation      4;  Value -4.958507e+02Function evaluation      6;  Value -5.013870e+02Function evaluation      9;  Value -5.030805e+02Function evaluation     12;  Value -5.059386e+02Function evaluation     15;  Value -5.066176e+02Function evaluation     17;  Value -5.078229e+02Function evaluation     19;  Value -5.087160e+02Function evaluation     21;  Value -5.091833e+02Function evaluation     23;  Value -5.105454e+02Function evaluation     25;  Value -5.112444e+02Function evaluation     27;  Value -5.128463e+02Function evaluation     29;  Value -5.130032e+02Function evaluation     30;  Value -5.131404e+02Function evaluation     33;  Value -5.136870e+02Function evaluation     37;  Value -5.137918e+02Function evaluation     39;  Value -5.138534e+02Function evaluation     41;  Value -5.138883e+02Function evaluation     43;  Value -5.139357e+02Function evaluation     45;  Value -5.139699e+02Function evaluation     47;  Value -5.140283e+02Function evaluation     49;  Value -5.140624e+02Function evaluation     51;  Value -5.140657e+02Function evaluation     54;  Value -5.140781e+02Function evaluation     56;  Value -5.140838e+02Function evaluation     59;  Value -5.141048e+02Function evaluation     61;  Value -5.141122e+02Function evaluation     63;  Value -5.141253e+02Function evaluation     65;  Value -5.141420e+02Function evaluation     72;  Value -5.145481e+02Function evaluation     76;  Value -5.146190e+02Function evaluation     78;  Value -5.147243e+02Function evaluation     80;  Value -5.147904e+02Function evaluation     82;  Value -5.148123e+02Function evaluation     84;  Value -5.148564e+02Function evaluation     86;  Value -5.148840e+02Function evaluation     88;  Value -5.148965e+02Function evaluation     90;  Value -5.149037e+02Function evaluation     92;  Value -5.149238e+02Function evaluation     94;  Value -5.149478e+02Function evaluation     96;  Value -5.149622e+02Function evaluation     98;  Value -5.149707e+02Function evaluation    100;  Value -5.149980e+02
+best_nll =
+
+ -514.9980
+
+
+Writing completion flag
+
+Goodbye, World
+[?1l>
