@@ -43,7 +43,6 @@ Submitting job 3 of 3
 Sleeping for 5 seconds
 Sleeping for 5 seconds
 Sleeping for 5 seconds
-Sleeping for 5 seconds
 Job 1 of 3 has completed
 Job 2 of 3 has completed
 Job 3 of 3 has completed
@@ -89,17 +88,17 @@ Submitting job 8 of 9
 Submitting job 9 of 9
 Sleeping for 5 seconds
 Sleeping for 5 seconds
-Sleeping for 5 seconds
 Job 1 of 9 has completed
-Job 3 of 9 has completed
+Job 2 of 9 has completed
 Job 4 of 9 has completed
-Job 7 of 9 has completed
+Job 6 of 9 has completed
 Job 8 of 9 has completed
 Job 9 of 9 has completed
 Sleeping for 5 seconds
-Job 2 of 9 has completed
+Sleeping for 5 seconds
+Job 3 of 9 has completed
 Job 5 of 9 has completed
-Job 6 of 9 has completed
+Job 7 of 9 has completed
 Reading output file 1 of 9
 Reading output file 2 of 9
 Reading output file 3 of 9
@@ -175,17 +174,17 @@ Submitting job 8 of 9
 Submitting job 9 of 9
 Sleeping for 5 seconds
 Sleeping for 5 seconds
+Job 1 of 9 has completed
+Job 2 of 9 has completed
 Job 4 of 9 has completed
+Job 7 of 9 has completed
 Job 8 of 9 has completed
 Job 9 of 9 has completed
 Sleeping for 5 seconds
 Sleeping for 5 seconds
-Job 1 of 9 has completed
-Job 2 of 9 has completed
 Job 3 of 9 has completed
 Job 5 of 9 has completed
 Job 6 of 9 has completed
-Job 7 of 9 has completed
 Reading output file 1 of 9
 Reading output file 2 of 9
 Reading output file 3 of 9
@@ -274,23 +273,24 @@ Submitting job 9 of 12
 Submitting job 10 of 12
 Sleeping for 5 seconds
 Sleeping for 5 seconds
-Sleeping for 5 seconds
-Job 4 of 12 has completed
-Job 5 of 12 has completed
+Job 1 of 12 has completed
+Job 3 of 12 has completed
+Job 6 of 12 has completed
+Job 10 of 12 has completed
 Submitting job 11 of 12
 Submitting job 12 of 12
 Sleeping for 5 seconds
-Job 1 of 12 has completed
+Sleeping for 5 seconds
 Job 2 of 12 has completed
-Job 3 of 12 has completed
-Job 6 of 12 has completed
+Job 4 of 12 has completed
+Job 5 of 12 has completed
 Job 7 of 12 has completed
 Job 8 of 12 has completed
 Job 9 of 12 has completed
-Job 10 of 12 has completed
+Sleeping for 5 seconds
+Job 12 of 12 has completed
 Sleeping for 5 seconds
 Job 11 of 12 has completed
-Job 12 of 12 has completed
 Reading output file 1 of 12
 Reading output file 2 of 12
 Reading output file 3 of 12
@@ -403,21 +403,23 @@ Submitting job 9 of 12
 Submitting job 10 of 12
 Sleeping for 5 seconds
 Sleeping for 5 seconds
+Job 2 of 12 has completed
 Job 3 of 12 has completed
 Job 4 of 12 has completed
-Job 7 of 12 has completed
+Job 8 of 12 has completed
+Job 9 of 12 has completed
 Job 10 of 12 has completed
 Submitting job 11 of 12
 Submitting job 12 of 12
 Sleeping for 5 seconds
 Sleeping for 5 seconds
 Job 1 of 12 has completed
-Job 2 of 12 has completed
 Job 5 of 12 has completed
 Job 6 of 12 has completed
-Job 8 of 12 has completed
-Job 9 of 12 has completed
+Job 7 of 12 has completed
 Job 11 of 12 has completed
+Sleeping for 5 seconds
+Sleeping for 5 seconds
 Job 12 of 12 has completed
 Reading output file 1 of 12
 Reading output file 2 of 12

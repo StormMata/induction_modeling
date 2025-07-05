@@ -1,10 +1,12 @@
 *.png
 *.pth
-*.npy
 .DS_Store
 *.out
-*.mat
 *.sh
 *.o
 *.m
 *.flg
+
+*.npy
+*.npz
+
