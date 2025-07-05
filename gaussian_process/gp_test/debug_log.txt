@@ -1,7 +1,7 @@
 Running experiment:
 description = An example experiment,
 data_dir = ../data/1d_data/01-airline.mat,
-max_depth = 3,
+max_depth = 5,
 random_order = False,
 k = 1,
 debug = True,
@@ -43,9 +43,8 @@ Submitting job 3 of 3
 Sleeping for 5 seconds
 Sleeping for 5 seconds
 Sleeping for 5 seconds
+Sleeping for 5 seconds
 Job 1 of 3 has completed
-Sleeping for 5 seconds
-Sleeping for 5 seconds
 Job 2 of 3 has completed
 Job 3 of 3 has completed
 Reading output file 1 of 3
@@ -91,17 +90,16 @@ Submitting job 9 of 9
 Sleeping for 5 seconds
 Sleeping for 5 seconds
 Sleeping for 5 seconds
-Job 2 of 9 has completed
+Job 1 of 9 has completed
+Job 3 of 9 has completed
 Job 4 of 9 has completed
-Job 6 of 9 has completed
+Job 7 of 9 has completed
 Job 8 of 9 has completed
 Job 9 of 9 has completed
 Sleeping for 5 seconds
-Sleeping for 5 seconds
-Job 1 of 9 has completed
-Job 3 of 9 has completed
+Job 2 of 9 has completed
 Job 5 of 9 has completed
-Job 7 of 9 has completed
+Job 6 of 9 has completed
 Reading output file 1 of 9
 Reading output file 2 of 9
 Reading output file 3 of 9
@@ -177,17 +175,17 @@ Submitting job 8 of 9
 Submitting job 9 of 9
 Sleeping for 5 seconds
 Sleeping for 5 seconds
-Job 1 of 9 has completed
 Job 4 of 9 has completed
-Job 6 of 9 has completed
-Job 7 of 9 has completed
 Job 8 of 9 has completed
-Sleeping for 5 seconds
 Job 9 of 9 has completed
 Sleeping for 5 seconds
+Sleeping for 5 seconds
+Job 1 of 9 has completed
 Job 2 of 9 has completed
 Job 3 of 9 has completed
 Job 5 of 9 has completed
+Job 6 of 9 has completed
+Job 7 of 9 has completed
 Reading output file 1 of 9
 Reading output file 2 of 9
 Reading output file 3 of 9
@@ -248,6 +246,275 @@ Printing all results
 761.5628699333228 nan 1533.0653664657975 M(0, SE(ell=2.9, sf=6.2))
 761.5628699332744 nan 1533.065366465701 M(0, SE(ell=2.9, sf=6.2))
 761.5628699332111 nan 1533.0653664655742 M(0, SE(ell=2.9, sf=6.2))
+690.3440698115205 nan 1400.567392821345 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+Seed kernels :
+( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+Expanded kernels :
+( M(0, SE(ell=0.0, sf=0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) )  ) 
+( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.0, sf=0.0)) ) 
+( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.0, sf=0.0)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=0.0, sf=0.0)) x M(0, SE(ell=2.9, sf=6.2)) )  ) 
+( M(0, SE(ell=0.0, sf=0.0)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+( M(0, SE(ell=2.9, sf=6.2)) + ( M(0, SE(ell=-2.0, sf=3.8)) x M(0, SE(ell=0.0, sf=0.0)) )  ) 
+
+--- Depth 3 ---
+# Current kernels to score: 4
+Creating data file locally
+Creating scripts
+Sending scripts to cblparallel
+Submitting job 1 of 12
+Submitting job 2 of 12
+Submitting job 3 of 12
+Submitting job 4 of 12
+Submitting job 5 of 12
+Submitting job 6 of 12
+Submitting job 7 of 12
+Submitting job 8 of 12
+Submitting job 9 of 12
+Submitting job 10 of 12
+Sleeping for 5 seconds
+Sleeping for 5 seconds
+Sleeping for 5 seconds
+Job 4 of 12 has completed
+Job 5 of 12 has completed
+Submitting job 11 of 12
+Submitting job 12 of 12
+Sleeping for 5 seconds
+Job 1 of 12 has completed
+Job 2 of 12 has completed
+Job 3 of 12 has completed
+Job 6 of 12 has completed
+Job 7 of 12 has completed
+Job 8 of 12 has completed
+Job 9 of 12 has completed
+Job 10 of 12 has completed
+Sleeping for 5 seconds
+Job 11 of 12 has completed
+Job 12 of 12 has completed
+Reading output file 1 of 12
+Reading output file 2 of 12
+Reading output file 3 of 12
+Reading output file 4 of 12
+Reading output file 5 of 12
+Reading output file 6 of 12
+Reading output file 7 of 12
+Reading output file 8 of 12
+Reading output file 9 of 12
+Reading output file 10 of 12
+Reading output file 11 of 12
+Reading output file 12 of 12
+Removing output file 1 of 12
+Removing output file 2 of 12
+Removing output file 3 of 12
+Removing output file 4 of 12
+Removing output file 5 of 12
+Removing output file 6 of 12
+Removing output file 7 of 12
+Removing output file 8 of 12
+Removing output file 9 of 12
+Removing output file 10 of 12
+Removing output file 11 of 12
+Removing output file 12 of 12
+# New results after scoring: 12
+All new results:
+762.1933361266069 nan 1544.265925451518 ( M(0, SE(ell=3.4, sf=7.2)) + M(0, SE(ell=0.0, sf=-0.0)) ) 
+761.6336063540556 nan 1543.1464659064152 ( M(0, SE(ell=2.7, sf=6.0)) + M(0, SE(ell=1.7, sf=0.0)) ) 
+690.3440945475479 nan 1410.5070688925518 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.7, sf=-2.1)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.344081880276 nan 1410.507043558008 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.9, sf=-2.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440731615589 nan 1410.5070261205738 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=-1.9, sf=-0.7)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440739210871 nan 1405.537214340054 ( M(0, SE(ell=3.2, sf=-0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.344070346699 nan 1405.537207191278 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=-0.0)) x M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.3440702816332 nan 1405.5372070611463 ( M(0, SE(ell=5.7, sf=1.0)) x ( M(0, SE(ell=-2.0, sf=2.8)) + M(0, SE(ell=2.9, sf=5.2)) )  ) 
+690.3440699217081 nan 1405.537206341296 ( M(0, SE(ell=3.2, sf=0.6)) x ( M(0, SE(ell=-2.0, sf=3.3)) + M(0, SE(ell=3.2, sf=5.6)) )  ) 
+690.3440698119582 nan 1405.5372061217963 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.3, sf=4.4)) x M(0, SE(ell=3.1, sf=1.7)) )  ) 
+690.3440698117761 nan 1405.537206121432 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=1.0)) x M(0, SE(ell=3.2, sf=5.2)) )  ) 
+690.3618713397378 nan 1400.6029958777797 ( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=-2.0, sf=3.8)) ) 
+All new results after duplicate removal:
+762.1933361266069 nan 1544.265925451518 ( M(0, SE(ell=3.4, sf=7.2)) + M(0, SE(ell=0.0, sf=-0.0)) ) 
+761.6336063540556 nan 1543.1464659064152 ( M(0, SE(ell=2.7, sf=6.0)) + M(0, SE(ell=1.7, sf=0.0)) ) 
+690.3440945475479 nan 1410.5070688925518 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.7, sf=-2.1)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.344081880276 nan 1410.507043558008 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.9, sf=-2.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440731615589 nan 1410.5070261205738 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=-1.9, sf=-0.7)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440739210871 nan 1405.537214340054 ( M(0, SE(ell=3.2, sf=-0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.344070346699 nan 1405.537207191278 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=-0.0)) x M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.3440702816332 nan 1405.5372070611463 ( M(0, SE(ell=5.7, sf=1.0)) x ( M(0, SE(ell=-2.0, sf=2.8)) + M(0, SE(ell=2.9, sf=5.2)) )  ) 
+690.3440699217081 nan 1405.537206341296 ( M(0, SE(ell=3.2, sf=0.6)) x ( M(0, SE(ell=-2.0, sf=3.3)) + M(0, SE(ell=3.2, sf=5.6)) )  ) 
+690.3440698119582 nan 1405.5372061217963 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.3, sf=4.4)) x M(0, SE(ell=3.1, sf=1.7)) )  ) 
+690.3440698117761 nan 1405.537206121432 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=1.0)) x M(0, SE(ell=3.2, sf=5.2)) )  ) 
+690.3618713397378 nan 1400.6029958777797 ( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=-2.0, sf=3.8)) ) 
+Printing all results
+1027.9236690143384 nan 2070.756777927405 ( M(0, SE(ell=-4.3, sf=0.1)) x M(0, SE(ell=2.9, sf=-1.0)) ) 
+1027.903814739796 nan 2065.7472560787437 M(0, SE(ell=9.9, sf=21.1))
+1027.903814739796 nan 2065.7472560787437 M(0, SE(ell=9.9, sf=21.1))
+1027.903814739796 nan 2065.7472560787437 M(0, SE(ell=9.9, sf=21.1))
+762.1933361266069 nan 1544.265925451518 ( M(0, SE(ell=3.4, sf=7.2)) + M(0, SE(ell=0.0, sf=-0.0)) ) 
+761.6336063540556 nan 1543.1464659064152 ( M(0, SE(ell=2.7, sf=6.0)) + M(0, SE(ell=1.7, sf=0.0)) ) 
+761.5630273370233 nan 1543.0053078723506 ( M(0, SE(ell=0.2, sf=-2.6)) + M(0, SE(ell=2.8, sf=6.2)) ) 
+761.5629457485722 nan 1543.0051446954485 ( M(0, SE(ell=0.2, sf=-2.4)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5629293924794 nan 1543.0051119832629 ( M(0, SE(ell=0.5, sf=-5.4)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5628699332844 nan 1543.004993064873 ( M(0, SE(ell=-6.3, sf=-2.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5619089116595 nan 1543.003071021623 ( M(0, SE(ell=-2.2, sf=-0.6)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5628699400063 nan 1538.0351797787405 ( M(0, SE(ell=5.2, sf=-1.5)) x M(0, SE(ell=2.9, sf=7.7)) ) 
+761.5628699346645 nan 1538.0351797680569 ( M(0, SE(ell=3.1, sf=2.8)) x M(0, SE(ell=3.4, sf=3.4)) ) 
+761.5628699332681 nan 1538.035179765264 ( M(0, SE(ell=3.9, sf=-0.0)) x M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5628699332124 nan 1538.0351797651526 ( M(0, SE(ell=3.8, sf=0.8)) x M(0, SE(ell=2.9, sf=5.5)) ) 
+761.5628699332026 nan 1538.035179765133 ( M(0, SE(ell=3.9, sf=0.0)) x M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5629664906406 nan 1533.0655595804333 M(0, SE(ell=2.9, sf=6.2))
+761.5628741887657 nan 1533.0653749766834 M(0, SE(ell=2.9, sf=6.2))
+761.5628699333674 nan 1533.0653664658869 M(0, SE(ell=2.9, sf=6.2))
+761.5628699333228 nan 1533.0653664657975 M(0, SE(ell=2.9, sf=6.2))
+761.5628699332744 nan 1533.065366465701 M(0, SE(ell=2.9, sf=6.2))
+761.5628699332111 nan 1533.0653664655742 M(0, SE(ell=2.9, sf=6.2))
+690.3440945475479 nan 1410.5070688925518 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.7, sf=-2.1)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.344081880276 nan 1410.507043558008 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.9, sf=-2.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440731615589 nan 1410.5070261205738 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=-1.9, sf=-0.7)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440739210871 nan 1405.537214340054 ( M(0, SE(ell=3.2, sf=-0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.344070346699 nan 1405.537207191278 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=-0.0)) x M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.3440702816332 nan 1405.5372070611463 ( M(0, SE(ell=5.7, sf=1.0)) x ( M(0, SE(ell=-2.0, sf=2.8)) + M(0, SE(ell=2.9, sf=5.2)) )  ) 
+690.3440699217081 nan 1405.537206341296 ( M(0, SE(ell=3.2, sf=0.6)) x ( M(0, SE(ell=-2.0, sf=3.3)) + M(0, SE(ell=3.2, sf=5.6)) )  ) 
+690.3440698119582 nan 1405.5372061217963 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.3, sf=4.4)) x M(0, SE(ell=3.1, sf=1.7)) )  ) 
+690.3440698117761 nan 1405.537206121432 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=1.0)) x M(0, SE(ell=3.2, sf=5.2)) )  ) 
+690.3618713397378 nan 1400.6029958777797 ( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=-2.0, sf=3.8)) ) 
+690.3440698115205 nan 1400.567392821345 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+Seed kernels :
+( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=-2.0, sf=3.8)) ) 
+Expanded kernels :
+( M(0, SE(ell=0.0, sf=0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.8, sf=6.1)) )  ) 
+( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.0, sf=0.0)) ) 
+( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.0, sf=0.0)) + M(0, SE(ell=2.8, sf=6.1)) ) 
+( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=0.0, sf=0.0)) x M(0, SE(ell=2.8, sf=6.1)) )  ) 
+( M(0, SE(ell=0.0, sf=0.0)) + M(0, SE(ell=2.8, sf=6.1)) ) 
+( M(0, SE(ell=2.8, sf=6.1)) + ( M(0, SE(ell=-2.0, sf=3.8)) x M(0, SE(ell=0.0, sf=0.0)) )  ) 
+
+--- Depth 4 ---
+# Current kernels to score: 4
+Creating data file locally
+Creating scripts
+Sending scripts to cblparallel
+Submitting job 1 of 12
+Submitting job 2 of 12
+Submitting job 3 of 12
+Submitting job 4 of 12
+Submitting job 5 of 12
+Submitting job 6 of 12
+Submitting job 7 of 12
+Submitting job 8 of 12
+Submitting job 9 of 12
+Submitting job 10 of 12
+Sleeping for 5 seconds
+Sleeping for 5 seconds
+Job 3 of 12 has completed
+Job 4 of 12 has completed
+Job 7 of 12 has completed
+Job 10 of 12 has completed
+Submitting job 11 of 12
+Submitting job 12 of 12
+Sleeping for 5 seconds
+Sleeping for 5 seconds
+Job 1 of 12 has completed
+Job 2 of 12 has completed
+Job 5 of 12 has completed
+Job 6 of 12 has completed
+Job 8 of 12 has completed
+Job 9 of 12 has completed
+Job 11 of 12 has completed
+Job 12 of 12 has completed
+Reading output file 1 of 12
+Reading output file 2 of 12
+Reading output file 3 of 12
+Reading output file 4 of 12
+Reading output file 5 of 12
+Reading output file 6 of 12
+Reading output file 7 of 12
+Reading output file 8 of 12
+Reading output file 9 of 12
+Reading output file 10 of 12
+Reading output file 11 of 12
+Reading output file 12 of 12
+Removing output file 1 of 12
+Removing output file 2 of 12
+Removing output file 3 of 12
+Removing output file 4 of 12
+Removing output file 5 of 12
+Removing output file 6 of 12
+Removing output file 7 of 12
+Removing output file 8 of 12
+Removing output file 9 of 12
+Removing output file 10 of 12
+Removing output file 11 of 12
+Removing output file 12 of 12
+# New results after scoring: 12
+All new results:
+761.5628685620904 nan 1547.9748036220608 ( M(0, SE(ell=8.6, sf=0.9)) x ( M(0, SE(ell=6.3, sf=-0.7)) + M(0, SE(ell=2.9, sf=5.4)) )  ) 
+761.5703633911019 nan 1543.0199799805077 ( M(0, SE(ell=2.9, sf=6.2)) + M(0, SE(ell=0.1, sf=-0.1)) ) 
+761.5289201926869 nan 1542.9370935836778 ( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=4.2, sf=5.7)) ) 
+690.344241174061 nan 1410.507362145578 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.5, sf=-1.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440695251049 nan 1410.507018847666 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.4, sf=0.0)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440677237485 nan 1410.507015244953 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=3.9, sf=0.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3444552130723 nan 1405.5379769240244 ( M(0, SE(ell=4.3, sf=0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) )  ) 
+690.3440702437135 nan 1405.537206985307 ( M(0, SE(ell=2.9, sf=-1.2)) x ( M(0, SE(ell=-2.0, sf=5.0)) + M(0, SE(ell=5.0, sf=7.3)) )  ) 
+690.3440698754926 nan 1405.537206248865 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=0.0)) x M(0, SE(ell=3.2, sf=6.1)) )  ) 
+690.3440698121171 nan 1405.5372061221142 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=4.8, sf=2.5)) x M(0, SE(ell=2.9, sf=3.6)) )  ) 
+690.344069811599 nan 1405.5372061210778 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.4, sf=-0.6)) x M(0, SE(ell=3.1, sf=6.7)) )  ) 
+690.3440713583901 nan 1400.5673959150843 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+All new results after duplicate removal:
+761.5628685620904 nan 1547.9748036220608 ( M(0, SE(ell=8.6, sf=0.9)) x ( M(0, SE(ell=6.3, sf=-0.7)) + M(0, SE(ell=2.9, sf=5.4)) )  ) 
+761.5703633911019 nan 1543.0199799805077 ( M(0, SE(ell=2.9, sf=6.2)) + M(0, SE(ell=0.1, sf=-0.1)) ) 
+761.5289201926869 nan 1542.9370935836778 ( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=4.2, sf=5.7)) ) 
+690.344241174061 nan 1410.507362145578 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.5, sf=-1.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440695251049 nan 1410.507018847666 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.4, sf=0.0)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440677237485 nan 1410.507015244953 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=3.9, sf=0.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3444552130723 nan 1405.5379769240244 ( M(0, SE(ell=4.3, sf=0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) )  ) 
+690.3440702437135 nan 1405.537206985307 ( M(0, SE(ell=2.9, sf=-1.2)) x ( M(0, SE(ell=-2.0, sf=5.0)) + M(0, SE(ell=5.0, sf=7.3)) )  ) 
+690.3440698754926 nan 1405.537206248865 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=0.0)) x M(0, SE(ell=3.2, sf=6.1)) )  ) 
+690.3440698121171 nan 1405.5372061221142 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=4.8, sf=2.5)) x M(0, SE(ell=2.9, sf=3.6)) )  ) 
+690.344069811599 nan 1405.5372061210778 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.4, sf=-0.6)) x M(0, SE(ell=3.1, sf=6.7)) )  ) 
+690.3440713583901 nan 1400.5673959150843 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+Printing all results
+1027.9236690143384 nan 2070.756777927405 ( M(0, SE(ell=-4.3, sf=0.1)) x M(0, SE(ell=2.9, sf=-1.0)) ) 
+1027.903814739796 nan 2065.7472560787437 M(0, SE(ell=9.9, sf=21.1))
+1027.903814739796 nan 2065.7472560787437 M(0, SE(ell=9.9, sf=21.1))
+1027.903814739796 nan 2065.7472560787437 M(0, SE(ell=9.9, sf=21.1))
+761.5628685620904 nan 1547.9748036220608 ( M(0, SE(ell=8.6, sf=0.9)) x ( M(0, SE(ell=6.3, sf=-0.7)) + M(0, SE(ell=2.9, sf=5.4)) )  ) 
+762.1933361266069 nan 1544.265925451518 ( M(0, SE(ell=3.4, sf=7.2)) + M(0, SE(ell=0.0, sf=-0.0)) ) 
+761.6336063540556 nan 1543.1464659064152 ( M(0, SE(ell=2.7, sf=6.0)) + M(0, SE(ell=1.7, sf=0.0)) ) 
+761.5703633911019 nan 1543.0199799805077 ( M(0, SE(ell=2.9, sf=6.2)) + M(0, SE(ell=0.1, sf=-0.1)) ) 
+761.5630273370233 nan 1543.0053078723506 ( M(0, SE(ell=0.2, sf=-2.6)) + M(0, SE(ell=2.8, sf=6.2)) ) 
+761.5629457485722 nan 1543.0051446954485 ( M(0, SE(ell=0.2, sf=-2.4)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5629293924794 nan 1543.0051119832629 ( M(0, SE(ell=0.5, sf=-5.4)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5628699332844 nan 1543.004993064873 ( M(0, SE(ell=-6.3, sf=-2.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5619089116595 nan 1543.003071021623 ( M(0, SE(ell=-2.2, sf=-0.6)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5289201926869 nan 1542.9370935836778 ( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=4.2, sf=5.7)) ) 
+761.5628699400063 nan 1538.0351797787405 ( M(0, SE(ell=5.2, sf=-1.5)) x M(0, SE(ell=2.9, sf=7.7)) ) 
+761.5628699346645 nan 1538.0351797680569 ( M(0, SE(ell=3.1, sf=2.8)) x M(0, SE(ell=3.4, sf=3.4)) ) 
+761.5628699332681 nan 1538.035179765264 ( M(0, SE(ell=3.9, sf=-0.0)) x M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5628699332124 nan 1538.0351797651526 ( M(0, SE(ell=3.8, sf=0.8)) x M(0, SE(ell=2.9, sf=5.5)) ) 
+761.5628699332026 nan 1538.035179765133 ( M(0, SE(ell=3.9, sf=0.0)) x M(0, SE(ell=2.9, sf=6.2)) ) 
+761.5629664906406 nan 1533.0655595804333 M(0, SE(ell=2.9, sf=6.2))
+761.5628741887657 nan 1533.0653749766834 M(0, SE(ell=2.9, sf=6.2))
+761.5628699333674 nan 1533.0653664658869 M(0, SE(ell=2.9, sf=6.2))
+761.5628699333228 nan 1533.0653664657975 M(0, SE(ell=2.9, sf=6.2))
+761.5628699332744 nan 1533.065366465701 M(0, SE(ell=2.9, sf=6.2))
+761.5628699332111 nan 1533.0653664655742 M(0, SE(ell=2.9, sf=6.2))
+690.344241174061 nan 1410.507362145578 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.5, sf=-1.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440945475479 nan 1410.5070688925518 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.7, sf=-2.1)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.344081880276 nan 1410.507043558008 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=0.9, sf=-2.3)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440731615589 nan 1410.5070261205738 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=-1.9, sf=-0.7)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440695251049 nan 1410.507018847666 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.4, sf=0.0)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3440677237485 nan 1410.507015244953 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=3.9, sf=0.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
+690.3444552130723 nan 1405.5379769240244 ( M(0, SE(ell=4.3, sf=0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) )  ) 
+690.3440739210871 nan 1405.537214340054 ( M(0, SE(ell=3.2, sf=-0.0)) x ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.344070346699 nan 1405.537207191278 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=-0.0)) x M(0, SE(ell=3.3, sf=6.2)) )  ) 
+690.3440702816332 nan 1405.5372070611463 ( M(0, SE(ell=5.7, sf=1.0)) x ( M(0, SE(ell=-2.0, sf=2.8)) + M(0, SE(ell=2.9, sf=5.2)) )  ) 
+690.3440702437135 nan 1405.537206985307 ( M(0, SE(ell=2.9, sf=-1.2)) x ( M(0, SE(ell=-2.0, sf=5.0)) + M(0, SE(ell=5.0, sf=7.3)) )  ) 
+690.3440699217081 nan 1405.537206341296 ( M(0, SE(ell=3.2, sf=0.6)) x ( M(0, SE(ell=-2.0, sf=3.3)) + M(0, SE(ell=3.2, sf=5.6)) )  ) 
+690.3440698754926 nan 1405.537206248865 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=0.0)) x M(0, SE(ell=3.2, sf=6.1)) )  ) 
+690.3440698121171 nan 1405.5372061221142 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=4.8, sf=2.5)) x M(0, SE(ell=2.9, sf=3.6)) )  ) 
+690.3440698119582 nan 1405.5372061217963 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.3, sf=4.4)) x M(0, SE(ell=3.1, sf=1.7)) )  ) 
+690.3440698117761 nan 1405.537206121432 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.2, sf=1.0)) x M(0, SE(ell=3.2, sf=5.2)) )  ) 
+690.344069811599 nan 1405.5372061210778 ( M(0, SE(ell=-2.0, sf=3.8)) + ( M(0, SE(ell=3.4, sf=-0.6)) x M(0, SE(ell=3.1, sf=6.7)) )  ) 
+690.3618713397378 nan 1400.6029958777797 ( M(0, SE(ell=2.8, sf=6.1)) + M(0, SE(ell=-2.0, sf=3.8)) ) 
+690.3440713583901 nan 1400.5673959150843 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
 690.3440698115205 nan 1400.567392821345 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
 Seed kernels :
 ( M(0, SE(ell=-2.0, sf=3.8)) + M(0, SE(ell=2.9, sf=6.2)) ) 
