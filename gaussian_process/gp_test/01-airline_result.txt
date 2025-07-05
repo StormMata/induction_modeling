@@ -1,0 +1,42 @@
+Experiment all_results for
+ datafile = ../data/1d_data/01-airline.mat
+
+ Running experiment:
+description = An example experiment,
+data_dir = ../data/1d_data/01-airline.mat,
+max_depth = 3,
+random_order = False,
+k = 1,
+debug = True,
+local_computation = True,
+n_rand = 2,
+sd = 4,
+max_jobs = 500,
+verbose = True,
+make_predictions = False,
+skip_complete = False,
+results_dir = /scratch/09909/smata/induction_modeling/gaussian_process/gp_test/,
+iters = 100,
+base_kernels = SE,
+zero_mean = True,
+verbose_results = False,
+random_seed = 0,
+use_min_period = True,
+period_heuristic = 10,
+use_constraints = False,
+alpha_heuristic = -2,
+lengthscale_heuristic = -4.5,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013317, output_variance=3.812922)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.858049, output_variance=6.153009)) ]), nll=690.344070, laplace_nle=nan, bic_nle=1400.567393, noise=[2.51222732])
+
+%%%%% Level 1 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013317, output_variance=3.812922)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.858049, output_variance=6.153009)) ]), nll=690.344070, laplace_nle=nan, bic_nle=1400.567393, noise=[2.51222732])
+
+%%%%% Level 2 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013317, output_variance=3.812922)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.858049, output_variance=6.153009)) ]), nll=690.344070, laplace_nle=nan, bic_nle=1400.567393, noise=[2.51222732])
