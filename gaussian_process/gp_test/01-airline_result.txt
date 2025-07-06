@@ -4,7 +4,7 @@ Experiment all_results for
  Running experiment:
 description = An example experiment,
 data_dir = ../data/1d_data/01-airline.mat,
-max_depth = 5,
+max_depth = 3,
 random_order = False,
 k = 1,
 debug = True,
@@ -17,7 +17,7 @@ make_predictions = False,
 skip_complete = False,
 results_dir = /scratch/09909/smata/induction_modeling/gaussian_process/gp_test/,
 iters = 100,
-base_kernels = SE,
+base_kernels = SE,Per,Lin,
 zero_mean = True,
 verbose_results = False,
 random_seed = 0,
@@ -31,20 +31,12 @@ lengthscale_heuristic = -4.5,
 
 %%%%% Level 0 %%%%%
 
-ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013370, output_variance=3.812874)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.857029, output_variance=6.152299)) ]), nll=690.344071, laplace_nle=nan, bic_nle=1400.567396, noise=[2.51218228])
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=LinKernel(offset=-7.250387, lengthscale=-3.459400, location=1946.181730)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.011886, output_variance=3.812666)) ]), nll=686.782453, laplace_nle=nan, bic_nle=1393.444160, noise=[2.51402733])
 
 %%%%% Level 1 %%%%%
 
-ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013370, output_variance=3.812874)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.857029, output_variance=6.152299)) ]), nll=690.344071, laplace_nle=nan, bic_nle=1400.567396, noise=[2.51218228])
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=LinKernel(offset=-7.250387, lengthscale=-3.459400, location=1946.181730)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.011886, output_variance=3.812666)) ]), nll=686.782453, laplace_nle=nan, bic_nle=1393.444160, noise=[2.51402733])
 
 %%%%% Level 2 %%%%%
 
-ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013370, output_variance=3.812874)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.857029, output_variance=6.152299)) ]), nll=690.344071, laplace_nle=nan, bic_nle=1400.567396, noise=[2.51218228])
-
-%%%%% Level 3 %%%%%
-
-ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013370, output_variance=3.812874)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.857029, output_variance=6.152299)) ]), nll=690.344071, laplace_nle=nan, bic_nle=1400.567396, noise=[2.51218228])
-
-%%%%% Level 4 %%%%%
-
-ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.013370, output_variance=3.812874)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.857029, output_variance=6.152299)) ]), nll=690.344071, laplace_nle=nan, bic_nle=1400.567396, noise=[2.51218228])
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=1, active_dimension=0, base_kernel=LinKernel(offset=-7.250387, lengthscale=-3.459400, location=1946.181730)), MaskKernel(ndim=1, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.011886, output_variance=3.812666)) ]), nll=686.782453, laplace_nle=nan, bic_nle=1393.444160, noise=[2.51402733])
