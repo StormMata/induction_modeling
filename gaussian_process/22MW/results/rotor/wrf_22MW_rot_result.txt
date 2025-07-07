@@ -1,0 +1,42 @@
+Experiment all_results for
+ datafile = /Users/stormmata/Library/Mobile Documents/com~apple~CloudDocs/Courses/Research/Code/induction_modeling/gaussian_process/22MW/train_data/wrf_22MW_rot.mat
+
+ Running experiment:
+description = 22MW turbine data in rotor-average form,
+data_dir = /Users/stormmata/Library/Mobile Documents/com~apple~CloudDocs/Courses/Research/Code/induction_modeling/gaussian_process/22MW/train_data/wrf_22MW_rot.mat,
+max_depth = 3,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 5,
+sd = 4,
+max_jobs = 500,
+verbose = False,
+make_predictions = False,
+skip_complete = False,
+results_dir = /Users/stormmata/Library/Mobile Documents/com~apple~CloudDocs/Courses/Research/Code/induction_modeling/gaussian_process/22MW/results/rotor,
+iters = 50,
+base_kernels = SE,Per,Lin,
+zero_mean = False,
+verbose_results = False,
+random_seed = 0,
+use_min_period = False,
+period_heuristic = 10,
+use_constraints = True,
+alpha_heuristic = -2,
+lengthscale_heuristic = -4.5,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=-0.782061, output_variance=-0.483317)), SumKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.699083, output_variance=-1.851067)), MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-4.601322, output_variance=-3.629389)) ]) ]), nll=-388.852795, laplace_nle=nan, bic_nle=-756.989916, noise=[-10.15167247])
+
+%%%%% Level 1 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=-0.782061, output_variance=-0.483317)), SumKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.699083, output_variance=-1.851067)), MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-4.601322, output_variance=-3.629389)) ]) ]), nll=-388.852795, laplace_nle=nan, bic_nle=-756.989916, noise=[-10.15167247])
+
+%%%%% Level 2 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=-0.782061, output_variance=-0.483317)), SumKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.699083, output_variance=-1.851067)), MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-4.601322, output_variance=-3.629389)) ]) ]), nll=-388.852795, laplace_nle=nan, bic_nle=-756.989916, noise=[-10.15167247])
