@@ -1,0 +1,42 @@
+Experiment all_results for
+ datafile = /scratch/09909/smata/induction_modeling/gaussian_process/22MW/train_data/wrf_22MW_ann.mat
+
+ Running experiment:
+description = 22MW turbine data in annulus-average form,
+data_dir = /scratch/09909/smata/induction_modeling/gaussian_process/22MW/train_data/wrf_22MW_ann.mat,
+max_depth = 3,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 2,
+sd = 4,
+max_jobs = 500,
+verbose = False,
+make_predictions = False,
+skip_complete = False,
+results_dir = /scratch/09909/smata/induction_modeling/gaussian_process/22MW/results/annulus,
+iters = 25,
+base_kernels = SE,Per,Lin,
+zero_mean = True,
+verbose_results = False,
+random_seed = 0,
+use_min_period = False,
+period_heuristic = 10,
+use_constraints = True,
+alpha_heuristic = -2,
+lengthscale_heuristic = -4.5,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=4, active_dimension=2, base_kernel=SqExpKernel(lengthscale=0.490773, output_variance=-0.080696)), SumKernel([ MaskKernel(ndim=4, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.780990, output_variance=0.071560)), MaskKernel(ndim=4, active_dimension=3, base_kernel=SqExpKernel(lengthscale=-0.801651, output_variance=-0.104663)) ]) ]), nll=-4150.700949, laplace_nle=nan, bic_nle=-8262.631635, noise=[-3.40197385])
+
+%%%%% Level 1 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=4, active_dimension=2, base_kernel=SqExpKernel(lengthscale=0.490773, output_variance=-0.080696)), SumKernel([ MaskKernel(ndim=4, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.780990, output_variance=0.071560)), MaskKernel(ndim=4, active_dimension=3, base_kernel=SqExpKernel(lengthscale=-0.801651, output_variance=-0.104663)) ]) ]), nll=-4150.700949, laplace_nle=nan, bic_nle=-8262.631635, noise=[-3.40197385])
+
+%%%%% Level 2 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=4, active_dimension=2, base_kernel=SqExpKernel(lengthscale=0.490773, output_variance=-0.080696)), SumKernel([ MaskKernel(ndim=4, active_dimension=0, base_kernel=SqExpKernel(lengthscale=-2.780990, output_variance=0.071560)), MaskKernel(ndim=4, active_dimension=3, base_kernel=SqExpKernel(lengthscale=-0.801651, output_variance=-0.104663)) ]) ]), nll=-4150.700949, laplace_nle=nan, bic_nle=-8262.631635, noise=[-3.40197385])

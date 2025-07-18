@@ -1,0 +1,46 @@
+Experiment all_results for
+ datafile = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/train_data/wrf_10MW_rot.mat
+
+ Running experiment:
+description = 10MW turbine data in rotor-average form,
+data_dir = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/train_data/wrf_10MW_rot.mat,
+max_depth = 4,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 2,
+sd = 4,
+max_jobs = 500,
+verbose = False,
+make_predictions = False,
+skip_complete = False,
+results_dir = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/results/rotor,
+iters = 30,
+base_kernels = SE,RQ,Per,Lin,
+zero_mean = True,
+verbose_results = False,
+random_seed = 0,
+use_min_period = False,
+period_heuristic = 10,
+use_constraints = True,
+alpha_heuristic = -2,
+lengthscale_heuristic = -4.5,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=LinKernel(offset=1.266366, lengthscale=1.864025, location=-0.546909)), SumKernel([ MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=1.991049, output_variance=1.151921)), ProductKernel([ MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-0.477746, output_variance=1.510859)), MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=3.577626, output_variance=-3.220355)) ]) ]) ]), nll=-178.826266, laplace_nle=nan, bic_nle=-332.793723, noise=[-5.87755528])
+
+%%%%% Level 1 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=LinKernel(offset=1.266366, lengthscale=1.864025, location=-0.546909)), SumKernel([ MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=1.991049, output_variance=1.151921)), ProductKernel([ MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-0.477746, output_variance=1.510859)), MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=3.577626, output_variance=-3.220355)) ]) ]) ]), nll=-178.826266, laplace_nle=nan, bic_nle=-332.793723, noise=[-5.87755528])
+
+%%%%% Level 2 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=LinKernel(offset=1.266366, lengthscale=1.864025, location=-0.546909)), SumKernel([ MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=1.991049, output_variance=1.151921)), ProductKernel([ MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-0.477746, output_variance=1.510859)), MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=3.577626, output_variance=-3.220355)) ]) ]) ]), nll=-178.826266, laplace_nle=nan, bic_nle=-332.793723, noise=[-5.87755528])
+
+%%%%% Level 3 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=LinKernel(offset=1.266366, lengthscale=1.864025, location=-0.546909)), SumKernel([ MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=1.991049, output_variance=1.151921)), ProductKernel([ MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-0.477746, output_variance=1.510859)), MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=3.577626, output_variance=-3.220355)) ]) ]) ]), nll=-178.826266, laplace_nle=nan, bic_nle=-332.793723, noise=[-5.87755528])

@@ -1,0 +1,38 @@
+Experiment all_results for
+ datafile = /scratch/09909/smata/induction_modeling/gaussian_process/all_turbines/train_data/wrf_all_ann.mat
+
+ Running experiment:
+description = 10MW, 15MW, and 22MW turbine data in annulus-average form,
+data_dir = /scratch/09909/smata/induction_modeling/gaussian_process/all_turbines/train_data/wrf_all_ann.mat,
+max_depth = 3,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 5,
+sd = 4,
+max_jobs = 500,
+verbose = False,
+make_predictions = False,
+skip_complete = False,
+results_dir = /scratch/09909/smata/induction_modeling/gaussian_process/all_turbines/results/annulus,
+iters = 50,
+base_kernels = SE,Per,Lin,RQ,
+zero_mean = True,
+verbose_results = False,
+random_seed = 0,
+use_min_period = False,
+period_heuristic = 10,
+use_constraints = True,
+alpha_heuristic = -2,
+lengthscale_heuristic = -4.5,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=4, active_dimension=0, base_kernel=RQKernel(lengthscale=-7.776504, output_variance=0.062463, alpha=-5.555306)), MaskKernel(ndim=4, active_dimension=3, base_kernel=RQKernel(lengthscale=2.628722, output_variance=0.820972, alpha=-4.824617)) ]), nll=-5603.383267, laplace_nle=nan, bic_nle=-11163.281476, noise=[-2.44622416])
+
+%%%%% Level 1 %%%%%
+
+ScoredKernel(k_opt=ProductKernel([ MaskKernel(ndim=4, active_dimension=0, base_kernel=RQKernel(lengthscale=-7.776504, output_variance=0.062463, alpha=-5.555306)), MaskKernel(ndim=4, active_dimension=3, base_kernel=RQKernel(lengthscale=2.628722, output_variance=0.820972, alpha=-4.824617)) ]), nll=-5603.383267, laplace_nle=nan, bic_nle=-11163.281476, noise=[-2.44622416])

@@ -1,0 +1,42 @@
+Experiment all_results for
+ datafile = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/train_data/wrf_10MW_rot.mat
+
+ Running experiment:
+description = 10MW turbine data in rotor-average form,
+data_dir = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/train_data/wrf_10MW_rot.mat,
+max_depth = 3,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 5,
+sd = 4,
+max_jobs = 500,
+verbose = False,
+make_predictions = False,
+skip_complete = False,
+results_dir = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/results/rotor,
+iters = 25,
+base_kernels = SE,RQ,Per,Lin,
+zero_mean = True,
+verbose_results = False,
+random_seed = 0,
+use_min_period = False,
+period_heuristic = 10,
+use_constraints = True,
+alpha_heuristic = -2,
+lengthscale_heuristic = -4.5,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-0.366678, output_variance=1.364362)), ProductKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.555432, output_variance=4.381824)), MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=2.341696, output_variance=-2.022604)) ]) ]), nll=-107.193919, laplace_nle=nan, bic_nle=-193.672165, noise=[-4.23481442])
+
+%%%%% Level 1 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-0.366678, output_variance=1.364362)), ProductKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.555432, output_variance=4.381824)), MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=2.341696, output_variance=-2.022604)) ]) ]), nll=-107.193919, laplace_nle=nan, bic_nle=-193.672165, noise=[-4.23481442])
+
+%%%%% Level 2 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=3, active_dimension=1, base_kernel=SqExpKernel(lengthscale=-0.366678, output_variance=1.364362)), ProductKernel([ MaskKernel(ndim=3, active_dimension=0, base_kernel=SqExpKernel(lengthscale=2.555432, output_variance=4.381824)), MaskKernel(ndim=3, active_dimension=2, base_kernel=SqExpKernel(lengthscale=2.341696, output_variance=-2.022604)) ]) ]), nll=-107.193919, laplace_nle=nan, bic_nle=-193.672165, noise=[-4.23481442])
