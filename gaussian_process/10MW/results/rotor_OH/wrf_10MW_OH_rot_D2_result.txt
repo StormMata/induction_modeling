@@ -1,0 +1,38 @@
+Experiment all_results for
+ datafile = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/train_data/wrf_10MW_OH_rot.mat
+
+ Running experiment:
+description = 10MW turbine data in rotor-average form,
+data_dir = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/train_data/wrf_10MW_OH_rot.mat,
+max_depth = 2,
+random_order = False,
+k = 1,
+debug = False,
+local_computation = True,
+n_rand = 5,
+sd = 4,
+max_jobs = 500,
+verbose = False,
+make_predictions = False,
+skip_complete = False,
+results_dir = /scratch/09909/smata/induction_modeling/gaussian_process/10MW/results/rotor_OH,
+iters = 50,
+base_kernels = SE,RQ,Per,Lin,
+zero_mean = True,
+verbose_results = False,
+random_seed = 0,
+use_min_period = False,
+period_heuristic = 10,
+use_constraints = True,
+alpha_heuristic = -2,
+lengthscale_heuristic = -4.5,
+ 
+
+
+%%%%% Level 0 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=7, active_dimension=1, base_kernel=SqExpKernel(lengthscale=1.031430, output_variance=1.591338)), MaskKernel(ndim=7, active_dimension=2, base_kernel=RQKernel(lengthscale=-0.165741, output_variance=0.940869, alpha=-4.186828)) ]), nll=-12.910202, laplace_nle=nan, bic_nle=-5.104731, noise=[-2.19032763])
+
+%%%%% Level 1 %%%%%
+
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=7, active_dimension=1, base_kernel=SqExpKernel(lengthscale=1.031430, output_variance=1.591338)), MaskKernel(ndim=7, active_dimension=2, base_kernel=RQKernel(lengthscale=-0.165741, output_variance=0.940869, alpha=-4.186828)) ]), nll=-12.910202, laplace_nle=nan, bic_nle=-5.104731, noise=[-2.19032763])
