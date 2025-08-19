@@ -31,8 +31,8 @@ lengthscale_heuristic = -4.5,
 
 %%%%% Level 0 %%%%%
 
-ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=4, active_dimension=0, base_kernel=RQKernel(lengthscale=-1.986653, output_variance=0.188391, alpha=-0.200101)), MaskKernel(ndim=4, active_dimension=2, base_kernel=SqExpKernel(lengthscale=1.150872, output_variance=-0.515760)) ]), nll=-1887.563278, laplace_nle=nan, bic_nle=-3738.120399, noise=[-2.62210088])
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=8, active_dimension=0, base_kernel=RQKernel(lengthscale=-1.997825, output_variance=0.229474, alpha=-0.196183)), MaskKernel(ndim=8, active_dimension=2, base_kernel=SqExpKernel(lengthscale=0.207973, output_variance=-1.892298)) ]), nll=-2322.181008, laplace_nle=nan, bic_nle=-4606.619236, noise=[-2.68684115])
 
 %%%%% Level 1 %%%%%
 
-ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=4, active_dimension=0, base_kernel=RQKernel(lengthscale=-1.986653, output_variance=0.188391, alpha=-0.200101)), MaskKernel(ndim=4, active_dimension=2, base_kernel=SqExpKernel(lengthscale=1.150872, output_variance=-0.515760)) ]), nll=-1887.563278, laplace_nle=nan, bic_nle=-3738.120399, noise=[-2.62210088])
+ScoredKernel(k_opt=SumKernel([ MaskKernel(ndim=8, active_dimension=0, base_kernel=RQKernel(lengthscale=-1.997825, output_variance=0.229474, alpha=-0.196183)), MaskKernel(ndim=8, active_dimension=2, base_kernel=SqExpKernel(lengthscale=0.207973, output_variance=-1.892298)) ]), nll=-2322.181008, laplace_nle=nan, bic_nle=-4606.619236, noise=[-2.68684115])

@@ -31,4 +31,4 @@ lengthscale_heuristic = -4.5,
 
 %%%%% Level 0 %%%%%
 
-ScoredKernel(k_opt=MaskKernel(ndim=4, active_dimension=0, base_kernel=RQKernel(lengthscale=-1.960491, output_variance=0.290404, alpha=-0.118123)), nll=-1379.351935, laplace_nle=nan, bic_nle=-2736.500176, noise=[-2.30006901])
+ScoredKernel(k_opt=MaskKernel(ndim=8, active_dimension=0, base_kernel=RQKernel(lengthscale=-1.983081, output_variance=0.290965, alpha=-0.131870)), nll=-1706.351351, laplace_nle=nan, bic_nle=-3390.057035, noise=[-2.35255688])
